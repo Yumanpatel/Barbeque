@@ -1,0 +1,31 @@
+<head>
+    <link rel="icon" href="img/icon.png">
+</head>
+<div class="">
+    <section class="orders light-section">
+    <div class="container mx-auto pt-12">
+        <h1 class="font-bold text-xl mb-4">Order Summary</h1>
+        <% if(messages.success){ %>
+        <div id="success-alert" class="flex items-center bg-red-500 text-white text-sm font-bold px-4 py-3" role="alert">
+            <p><%= messages.success %></p>
+        </div>
+        <% } %>
+        <!-- old table color : bg-gray-200 -->
+        <table class="admin-table w-full table-auto border px-4 py-2 bg-gray-200 shadow-2xl">
+            <thead class="text-lg">
+                <tr>
+                    <th class="px-4 py-2 text-left">Orders</th>
+                    <th class="px-4 py-2 text-left">Name</th>
+                    <th class="px-4 py-2 text-left">Phone</th>
+                    <th class="px-4 py-2 text-left">Address</th>
+                    <th class="px-4 py-2 text-left">Status</th>
+                    <th class="px-4 py-2 text-left">Action</th>
+                    <th class="px-4 py-2 text-left">Ordered On</th>
+                </tr>
+            </thead>
+            <tbody id="orderTableBody">
+            </tbody>
+        </table>
+    </div>
+</section>
+</div>

@@ -1,0 +1,54 @@
+<head>
+    <link rel="icon" href="img/icon.png">
+</head>
+<section class="orders light-section">
+    <div class="container mx-auto pt-12">
+        <div class="flex">
+        <h1 class="flex font-bold text-xl mb-4">Order History</h1> 
+        <span class="flex mt-1 link ml-4"><i class="text-red-400">( *click on order no. for live status. )</i></span>
+        </div>
+        <% if(messages.success){ %>
+        <div id="success-alert" class="flex items-center bg-red-500 text-white text-sm font-bold px-4 py-3" role="alert">
+            <p><%= messages.success %></p>
+        </div>
+        <% } %>
+        <table class="w-full shadow-2xl mb-16 table-auto bg-gray-200">
+            <thead class="border">
+                <tr class="text-lg">
+                    <th class="px-4 py-2 text-left">Orders</th>
+                    <th class="px-4 py-2 text-left">Phone</th>
+                    <th class="px-4 py-2 text-left">Address</th>
+                    <th class="px-4 py-2 text-left">Total</th>
+                    <th class="px-4 py-2 text-left">Ordered on</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% if(orders.length){ %>
+                    <% orders.forEach((order) => { %>
+                        <tr>
+                            <td class="border px-4 py-2">
+                                <a href="/customer/orders/<%= order._id %>" class="link"><%= order._id %></a>
+                            </td>
+                            <td class="border px-4 py-2">
+                                <%= order.phone %>
+                            </td>
+                            <td class="border px-4 py-2">
+                                <%= order.address %>
+                            </td>
+                            <td class="border px-4 py-2">
+                                ₹<%= order.total %>
+                            </td>
+                            <td class="border px-4 py-2">
+                                <%= moment(order.createdAt).format('MMM Do YYYY, h:mm A') %>
+                            </td>
+                        </tr>
+                    <% }) %>
+                <% }else{%>
+                    <tr>
+                        <td class="p-4"><span>No orders found</span></td>
+                    </tr>
+                    <% } %>
+            </tbody>
+        </table>
+    </div>
+</section>

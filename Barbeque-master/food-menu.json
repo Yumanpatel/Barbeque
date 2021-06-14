@@ -1,0 +1,129 @@
+[{
+  "_id": {
+    "$oid": "5eee651f739f8c674fd736ee"
+  },
+  "name": "Butter Chicken",
+  "image": "food-1.png",
+  "price": "350",
+  "size": "half"
+},{
+  "_id": {
+    "$oid": "5eee6671a27a66807cf2bea3"
+  },
+  "name": "Chicken Curry",
+  "image": "chicken-curry.png",
+  "price": "250",
+  "size": "quarter"
+},{
+  "_id": {
+    "$oid": "5eee6692a27a66807cf2bea4"
+  },
+  "name": "Chicken Tikka",
+  "image": "chicken-tikka.png",
+  "price": "200",
+  "size": "half"
+},{
+  "_id": {
+    "$oid": "5eee66a5a27a66807cf2bea5"
+  },
+  "name": "Paneer Tikka",
+  "image": "paneer-tikka.png",
+  "price": "185",
+  "size": "full"
+},{
+  "_id": {
+    "$oid": "5eee66c4a27a66807cf2bea6"
+  },
+  "name": "Hakka Noodles",
+  "image": "food-5.png",
+  "price": "150",
+  "size": "full"
+},{
+  "_id": {
+    "$oid": "5eee66cfa27a66807cf2bea7"
+  },
+  "name": "Schezwan Noodles",
+  "image": "schezwan-noodles.png",
+  "price": "180",
+  "size": "full"
+},{
+  "_id": {
+    "$oid": "5eee66eea27a66807cf2bea8"
+  },
+  "name": "Fried Rice",
+  "image": "fried-rice.png",
+  "price": "140",
+  "size": "full"
+},{
+  "_id": {
+    "$oid": "5eee6717a27a66807cf2bea9"
+  },
+  "name": "Schezwan Fried Rice",
+  "image": "schezwan-fried-rice.png",
+  "price": "160",
+  "size": "full"
+},{
+  "_id": {
+    "$oid": "5f78c237818043366d9b1c03"
+  },
+  "name": "Chicken Biryani",
+  "image": "chicken-biryani.png",
+  "price": "140",
+  "size": "full"
+},{
+  "_id": {
+    "$oid": "5f78c268818043366d9b1c04"
+  },
+  "name": "Chilly Mushroom",
+  "image": "chilly-mushroom.png",
+  "price": "160",
+  "size": "full"
+},{
+  "_id": {
+    "$oid": "5f78c28e818043366d9b1c05"
+  },
+  "name": "Chilly Paneer",
+  "image": "chilly-paneer.png",
+  "price": "180",
+  "size": "full"
+},{
+  "_id": {
+    "$oid": "5f78c2aa818043366d9b1c06"
+  },
+  "name": "Manchurian",
+  "image": "manchurian.png",
+  "price": "160",
+  "size": "full"
+},{
+  "_id": {
+    "$oid": "5f78c2d9818043366d9b1c07"
+  },
+  "name": "Veg Mexican Burger",
+  "image": "mexican-burger.png",
+  "price": "80",
+  "size": "full"
+},{
+  "_id": {
+    "$oid": "5f78c2f9818043366d9b1c08"
+  },
+  "name": "Pav Bhaji",
+  "image": "pav-bhaji.png",
+  "price": "80",
+  "size": "full"
+},{
+  "_id": {
+    "$oid": "5f78c317818043366d9b1c09"
+  },
+  "name": "Veg Spring Roll",
+  "image": "spring-roll.png",
+  "price": "120",
+  "size": "full"
+},{
+  "_id": {
+    "$oid": "5f78c36c818043366d9b1c0a"
+  },
+  "name": "White Sauce Pasta",
+  "image": "white-sauce-pasta.png",
+  "price": "170",
+  "size": "full"
+}]

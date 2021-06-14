@@ -1,0 +1,289 @@
+@import './variables' ;
+@import '~noty/src/noty.scss';
+@import '~noty/src/themes/mint.scss';
+
+body{
+    // font-family: 'Lato', sans-serif ;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased ;
+    color: $dark ;
+}
+
+footer{
+    background: $gray ;
+}
+
+nav li:last-child a{
+    background : $primary ;
+    &:hover{
+        background: $primary-hover ;
+    }
+}
+
+nav li a {
+    transition: $smooth;
+    &:hover{
+        color: $primary ;
+    }
+}
+
+.size{
+    background: $secondary ;
+}
+
+.add-to-cart{
+    border: 2px solid $primary ;
+    color: $primary ;
+    transition : $smooth ;
+    &:hover{
+        background: $primary ;
+        border-color: $pure ;
+        color: $pure ;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+.hover-style{
+    &:hover{
+        box-shadow: 5px 5px 18px #6e6d6d;
+    }
+}
+
+.zoom{
+    transition: transform .4s;
+    &:hover{
+        transform: scale(1.1); 
+    }
+}
+
+.img-zoom{
+    transition: transform .4s;
+    &:hover{
+        transform: scale(1.2); 
+    }
+}
+
+.admin-img-zoom{
+    transition: transform .4s;
+    width: 65px; height: 60px;
+    &:hover{
+        transform: scale(2.0); 
+        border-radius: 50% ;
+    }
+}
+
+
+.hover-btn{
+    width: 25px ;
+    height: 25px ;
+}
+
+.shadow-effect{
+    text-shadow: 2px 2px 4px #999393;
+}
+
+.btn-primary{
+    background: $primary ;
+    transition: $smooth ;
+    &:hover {
+        background: $primary-hover ;
+    }
+}
+
+section.cart{
+    background: $secondary ;
+    .amount{
+        color: $primary ;
+    }
+}
+
+section.login{
+    background: $secondary ;
+    min-height: calc(100vh-86px) ;
+    a{
+        color: $primary ;
+        &:hover{
+            color: $primary-hover ;
+        }
+    }
+}
+
+.noty_theme__mint {
+    border-radius: 10px!important;
+    padding-left: 8px!important;
+}
+
+a.link{
+    color: $primary ;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+.carousel-item {
+    -webkit-transition: opacity 0.4s ease-out;
+    transition: opacity 0.4s ease-out;
+}
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3,
+#carousel-4:checked ~ .control-4,
+#carousel-5:checked ~ .control-5 {
+    display: block;
+}
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
+#carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet
+{
+    color: $primary;  /*Set to match the Tailwind colour you want the active one to be */
+}
+
+section.status{
+    background: $secondary;
+    min-height: calc(100vh - 86px);
+}
+
+.status-box{
+    padding: 60px 0 0 ;
+}
+
+.status-box ul{
+    margin-left: 84px ;
+}
+
+.status-box ul li span{
+    position: relative;
+    padding-left: 20px;
+}
+
+.status-box ul li span:after{
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    background: $dark;
+    width: 10px;
+    height: 10px;
+    border-radius: 50% ;
+    transform: translateY(-50%) ;
+    box-shadow: 0 0 1px 10px $secondary;
+}
+
+.status-box ul li span:before{
+    font-family: "Line Awesome Free";
+    font-size: 46px;
+    font-weight: 600;
+    position: absolute;
+    left: -90px;
+    top: 50% ;
+    transform: translateY(-50%);
+    color: inherit
+}
+
+.status-box ul li:nth-child(1) span:before{
+    content: '\f0ae'
+}
+
+.status-box ul li:nth-child(2) span:before{
+    content: '\f164'
+}
+
+.status-box ul li:nth-child(3) span:before{
+    content: '\f2e7'
+}
+
+.status-box ul li:nth-child(4) span:before{
+    content: '\f21c';
+}
+
+.status-box ul li:nth-child(5) span:before{
+    content: '\f015'
+}
+
+.status-box ul li{
+    position: relative ;
+}
+
+// line
+.status-box ul li:before {
+    content: '';
+    position: absolute;
+    top: 0 ;
+    left: -6px ;
+    width: 2px ;
+    height: 100% ;
+    background: $dark ;
+}
+
+.status-box ul li:nth-child(5) span:after {
+    box-shadow: 0 20px 1px 20px $secondary;
+}
+
+// line
+.status-box ul li.step-completed:before{
+    background: $gray ;
+}
+
+// dots 
+.status-box ul li.step-completed span:after{
+    background: $gray;
+}
+
+//text
+.status-box ul li.step-completed span{
+    color: $gray ;
+}
+
+// current status
+.status-box ul li.current span{
+    color: $primary ;
+}
+
+.status-box ul li.current span:after{
+    background: $primary;
+}
+
+.status-box ul li small {
+    float: right;
+    font-size: 14px ;
+    margin-top : 8px ;
+}
+
+.card{
+    width: 120px;
+    height: 120px;
+}
+
+@media(max-width:1060px){
+    .container{
+        max-width: 90%;
+    }
+    table{
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+@media(max-width:768px){
+    .status-box ul li span:before{
+        font-size: 34px;
+    }
+}
